@@ -134,11 +134,11 @@
             <div class="cta-box">
                 <h2>Ready to find your Squad?</h2>
                 <p>Spots are limited to ensure quality matches. Join the waitlist for the next San Diego session.</p>
-                <form class="signup-form"
-                    onsubmit="event.preventDefault(); alert('This is a demo! In a real version, this would save your email.');">
-                    <input type="email" placeholder="Enter your email" required>
+                <form class="signup-form" action="https://formspree.io/f/mbdokbkq" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
                     <button type="submit" class="cta-button primary">Request Invite</button>
                 </form>
+                <p class="small-print">Submissions are emailed to the address connected to your Formspree form.</p>
                 <p class="small-print">San Diego, CA • In-Person Only</p>
             </div>
         </div>
