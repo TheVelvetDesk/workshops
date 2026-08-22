@@ -1,31 +1,22 @@
 # AI Workbench San Diego
 
-A static workshop and application site for small-room, hands-on AI education in San Diego. The public brand is **AI Workbench San Diego**; the existing GitHub repository name is unchanged.
+A standalone workshop information and application page for small-room, hands-on AI education in San Diego.
 
 Live site: <https://thevelvetdesk.github.io/ai-workbench-san-diego/>
 
 ## Structure
 
-- `index.html` — main positioning and workshop landing page
-- `assets/site.css` — shared responsive styles
-- `assets/site.js` — navigation, reveal behavior, and current year
-- `events/save-five-hours/` — event-specific page, application, and deposit configuration
+- `index.html` — complete workshop information and signup page
+- `assets/workshop.css` — focused responsive presentation
+- `assets/workshop.js` — application validation and Formspree submission
+- `events/save-five-hours/` — redirect retained for previously shared links
 - `LAUNCH-PLAN.md` — target market, pricing, curriculum ladder, channel plan, and validation metrics
 
-## Application and deposit setup
+## Application setup
 
 Applications post to the Formspree endpoint already connected to the previous site. Run one test submission before publishing and confirm that the notification reaches the intended inbox.
 
-The pilot deliberately does not collect payment until the date and applicant fit are confirmed. After creating a $49 Stripe Payment Link, paste it into:
-
-```js
-// events/save-five-hours/event-config.js
-window.EVENT_CONFIG = {
-  depositPaymentUrl: "https://buy.stripe.com/..."
-};
-```
-
-Once configured, the secure deposit button appears on the successful application screen. Stripe—not this static site—collects card details.
+The public page does not collect payment. After reviewing an application and matching a date, send the participant the detailed workshop information and secure deposit link by email.
 
 ## Local preview
 
@@ -37,8 +28,6 @@ Then open `http://127.0.0.1:4173`.
 
 ## Before launch
 
-1. Choose the first date and reserve a room only after the minimum paid-seat threshold is met.
-2. Add the Stripe Payment Link after the cohort date is confirmed.
-3. Test the Formspree submission and Stripe payment/refund flow.
-4. Add platform listing links and contact details once created.
-5. Add a privacy policy and cancellation/refund terms before accepting money.
+1. Test the Formspree submission and confirm delivery to the intended inbox.
+2. Choose the first date and reserve a room only after the minimum paid-seat threshold is met.
+3. Prepare the follow-up email, secure deposit link, and refund terms before requesting payment.

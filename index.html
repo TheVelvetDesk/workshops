@@ -3,153 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Workbench San Diego | Hands-on AI workshops for small business</title>
-  <meta name="description" content="Small-room, hands-on AI workshops for San Diego business owners. Bring one recurring task and leave with a tested, reusable workflow.">
-  <meta name="theme-color" content="#f5f1e8">
+  <title>Save Five Hours a Week | San Diego AI Workshop</title>
+  <meta name="description" content="A small, hands-on AI workshop for San Diego business owners. Bring one recurring task and leave with a reusable workflow.">
+  <meta name="theme-color" content="#f3efe5">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/workshop.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="AI Workbench San Diego home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>AI Workbench <small>San Diego</small></span>
-    </a>
-    <nav aria-label="Primary navigation">
-      <a href="#format">How it works</a>
-      <a href="#workshops">Workshops</a>
-      <a href="#questions">Questions</a>
-      <a class="button button-small" href="events/save-five-hours/">Apply for the pilot</a>
-    </nav>
-    <button class="menu-button" type="button" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
-  </header>
+  <a class="skip-link" href="#apply">Skip to application</a>
 
-  <main id="main">
-    <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> In-person · five seats · no coding</p>
-        <h1>Bring the task that <em>steals your time.</em></h1>
-        <p class="hero-lede">In two focused hours, turn one repetitive business task into a practical AI workflow you can use again next week—not a folder of lecture notes.</p>
-        <div class="hero-actions">
-          <a class="button" href="events/save-five-hours/">Apply for the first workshop <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#format">See what you will build <span aria-hidden="true">↓</span></a>
-        </div>
-        <dl class="hero-facts" aria-label="Workshop facts">
-          <div><dt>120</dt><dd>hands-on minutes</dd></div>
-          <div><dt>5</dt><dd>owners per room</dd></div>
-          <div><dt>1</dt><dd>workflow built</dd></div>
+  <main>
+    <header class="workshop-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>AI Workbench <small>San Diego</small></span></div>
+      <p>Founding workshop · 01</p>
+    </header>
+
+    <section class="intro">
+      <div class="intro-copy">
+        <p class="kicker">In person · beginner-friendly · no coding</p>
+        <h1>AI for Small-Business Owners: <em>Save Five Hours a Week</em></h1>
+        <p class="lede">Bring one repetitive business task. In two focused hours, build a practical AI workflow you can use again next week.</p>
+        <a class="apply-jump" href="#apply">Apply for one of five seats <span>↓</span></a>
+
+        <dl class="facts" aria-label="Workshop details">
+          <div><dt>Format</dt><dd>2 hours, hands-on</dd></div>
+          <div><dt>Group</dt><dd>5 people maximum</dd></div>
+          <div><dt>Pilot price</dt><dd>$149 total</dd></div>
+          <div><dt>Location</dt><dd>Central San Diego</dd></div>
         </dl>
-      </div>
 
-      <div class="hero-board reveal" aria-label="Example workshop outcome">
-        <div class="board-top"><span>WORKFLOW / 001</span><span class="live-dot">Built in the room</span></div>
-        <div class="paper-note note-task">
-          <small>THE TASK</small>
-          <strong>Turn job notes into a clear customer follow-up</strong>
-          <span>Current time: 35 min × 8 / week</span>
+        <div class="short-note">
+          <strong>The premise</strong>
+          <p>This is a working session, not a lecture. You will use a sanitized example from your actual business and leave with something reusable.</p>
         </div>
-        <div class="flow-line"><i></i><span></span><i></i><span></span><i></i></div>
-        <div class="workflow-row">
-          <div><small>01 · INPUT</small><b>Job notes</b></div>
-          <div><small>02 · AI DRAFT</small><b>Prompt system</b></div>
-          <div><small>03 · HUMAN CHECK</small><b>Review list</b></div>
+      </div>
+
+      <aside class="signup-card" id="apply">
+        <div class="signup-heading">
+          <span>5 founding seats</span>
+          <h2>Apply for a seat</h2>
+          <p>No charge today. We will match the first group by schedule, then email the confirmed date and next steps.</p>
         </div>
-        <div class="paper-note note-result">
-          <small>THE RESULT</small>
-          <strong>20 minutes saved each time</strong>
-          <span>≈ 2 hours 40 minutes back every week</span>
+
+        <form id="workshop-application" action="https://formspree.io/f/mbdokbkq" method="POST">
+          <input type="hidden" name="workshop" value="AI for Small-Business Owners: Save Five Hours a Week">
+          <input type="hidden" name="pilot_price" value="$149 total">
+          <input type="hidden" name="source_page" value="standalone-workshop">
+          <label class="honeypot">Leave this empty<input name="company_fax" tabindex="-1" autocomplete="off"></label>
+
+          <div class="field-row">
+            <label><span>Name</span><input name="name" autocomplete="name" required></label>
+            <label><span>Work email</span><input type="email" name="email" autocomplete="email" required></label>
+          </div>
+
+          <div class="field-row">
+            <label><span>Business name</span><input name="business_name" autocomplete="organization" required></label>
+            <label><span>Your role</span><select name="role" required><option value="">Select one</option><option>Owner / founder</option><option>Office or operations manager</option><option>Independent consultant</option><option>Team lead</option><option>Other</option></select></label>
+          </div>
+
+          <label class="field-wide"><span>What recurring task would you most like to make faster?</span><textarea name="target_task" placeholder="Example: turn service notes into a clear customer follow-up email" required></textarea></label>
+
+          <div class="field-row">
+            <label><span>Current AI experience</span><select name="ai_comfort" required><option value="">Select one</option><option>Never used an AI tool</option><option>Tried one a few times</option><option>Use one occasionally</option><option>Use AI every week</option></select></label>
+            <label><span>How did you hear about us?</span><select id="referral-source" name="referral_source" required><option value="">Select one</option><option>Eventbrite</option><option>Meetup</option><option>LinkedIn</option><option>Facebook or Instagram</option><option>Business group or coworking space</option><option>Friend or colleague</option><option>Other</option></select></label>
+          </div>
+
+          <fieldset>
+            <legend>When could you attend? <small>Select all that work</small></legend>
+            <div class="availability">
+              <label><input type="checkbox" name="availability" value="Weekday morning"><span>Weekday morning</span></label>
+              <label><input type="checkbox" name="availability" value="Weekday afternoon"><span>Weekday afternoon</span></label>
+              <label><input type="checkbox" name="availability" value="Weekday evening"><span>Weekday evening</span></label>
+              <label><input type="checkbox" name="availability" value="Saturday morning"><span>Saturday morning</span></label>
+            </div>
+          </fieldset>
+
+          <label class="consent"><input type="checkbox" name="contact_consent" value="Agreed" required><span>I agree to be contacted about this workshop and understand that applying does not reserve a seat.</span></label>
+
+          <button type="submit" id="submit-application">Send my application <span aria-hidden="true">→</span></button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="confirmation" id="confirmation" hidden>
+          <div class="confirmation-mark">✓</div>
+          <h2>You’re on the list.</h2>
+          <p>We’ll review your task and preferred schedule, then email you with the best cohort option and workshop details.</p>
         </div>
-        <div class="pencil-mark" aria-hidden="true">useful &gt; impressive</div>
+      </aside>
+    </section>
+
+    <section class="essentials" aria-label="Workshop essentials">
+      <div class="outcomes">
+        <p class="section-label">You will leave with</p>
+        <ul>
+          <li><span>01</span>A reusable AI workflow for one real task</li>
+          <li><span>02</span>A tested prompt and human-review checklist</li>
+          <li><span>03</span>An estimate of your weekly time saved</li>
+          <li><span>04</span>One task that should not use AI</li>
+        </ul>
+      </div>
+
+      <div class="agenda">
+        <p class="section-label">The two hours</p>
+        <ol>
+          <li><time>00–20</time><div><strong>Choose the task</strong><span>Find the useful, safe place to begin.</span></div></li>
+          <li><time>20–50</time><div><strong>Map the workflow</strong><span>Separate repeatable steps from human judgment.</span></div></li>
+          <li><time>50–100</time><div><strong>Build on your laptop</strong><span>Create the prompt, inputs, and output you need.</span></div></li>
+          <li><time>100–120</time><div><strong>Test and measure</strong><span>Review the result and calculate the time saved.</span></div></li>
+        </ol>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="Who the workshop is for">
-      <span>Built for the people doing the work:</span>
-      <ul><li>Owner-operators</li><li>Office managers</li><li>Consultants</li><li>Small teams</li></ul>
-    </section>
-
-    <section class="problem-section" id="format">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> The workbench format</p>
-        <h2>Less watching.<br><em>More working.</em></h2>
-      </div>
-      <div class="principle-grid">
-        <article class="principle reveal"><span class="index">01</span><h3>Start with your real task</h3><p>Bring a recurring email, document, follow-up, research task, or planning process. We map the steps before opening an AI tool.</p></article>
-        <article class="principle reveal"><span class="index">02</span><h3>Build beside a guide</h3><p>You create the prompt, inputs, and review checklist on your own laptop. We troubleshoot together while the group stays small.</p></article>
-        <article class="principle reveal"><span class="index">03</span><h3>Leave with a system</h3><p>Take home a reusable workflow card, tested output, time-saved estimate, safety boundary, and your next automation opportunity.</p></article>
-      </div>
-    </section>
-
-    <section class="featured-workshop" id="workshops">
-      <div class="event-ticket reveal">
-        <div class="ticket-main">
-          <div class="ticket-meta"><span>FOUNDING WORKSHOP · 01</span><span>SAN DIEGO, CA</span></div>
-          <p class="eyebrow"><span></span> Beginner-friendly</p>
-          <h2>AI for Small-Business Owners:<br><em>Save Five Hours a Week</em></h2>
-          <p>Choose one repetitive task and build a safe, repeatable workflow around it. You do not need to be “good at technology.” You do need to bring a laptop and a real task.</p>
-          <ul class="event-details">
-            <li><small>FORMAT</small><strong>2 hours · in person</strong></li>
-            <li><small>COHORT</small><strong>Maximum 5 people</strong></li>
-            <li><small>PILOT PRICE</small><strong>$149 total</strong></li>
-            <li><small>RESERVATION</small><strong>$49 after date confirmation</strong></li>
-          </ul>
-          <a class="button" href="events/save-five-hours/">View the workshop & apply <span aria-hidden="true">↗</span></a>
-        </div>
-        <aside class="ticket-stub">
-          <span class="vertical-label">PILOT COHORT</span>
-          <div class="seat-count"><b>05</b><span>seats only</span></div>
-          <div class="barcode" aria-hidden="true"></div>
-          <small>Date chosen with the first matched cohort</small>
-        </aside>
-      </div>
-    </section>
-
-    <section class="outcomes-section">
-      <div class="section-heading compact reveal">
-        <p class="eyebrow"><span></span> Your four decisions</p>
-        <h2>Every seat ends with <em>something usable.</em></h2>
-      </div>
-      <div class="outcome-list">
-        <div class="outcome reveal"><span>01</span><p>One task to start using AI for</p><i>→</i></div>
-        <div class="outcome reveal"><span>02</span><p>One task that should not use AI</p><i>→</i></div>
-        <div class="outcome reveal"><span>03</span><p>Your estimated weekly time saved</p><i>→</i></div>
-        <div class="outcome reveal"><span>04</span><p>Your next automation opportunity</p><i>→</i></div>
-      </div>
-    </section>
-
-    <section class="fit-section">
-      <div class="fit-card fit-yes reveal"><span class="stamp">GOOD FIT</span><h3>You will get value if…</h3><ul><li>You repeat the same writing, research, follow-up, or planning task every week.</li><li>You want practical help, not an AI trend lecture.</li><li>You are willing to test the output and keep a human in charge.</li></ul></div>
-      <div class="fit-card fit-no reveal"><span class="stamp">NOT YET</span><h3>This is not the room if…</h3><ul><li>You want a fully automated business built for you in two hours.</li><li>You plan to upload passwords or sensitive customer, health, legal, or financial data.</li><li>You need advanced engineering or custom software development.</li></ul></div>
-    </section>
-
-    <section class="faq-section" id="questions">
-      <div class="section-heading compact reveal"><p class="eyebrow"><span></span> Straight answers</p><h2>Before you <em>bring your laptop.</em></h2></div>
-      <div class="faq-list">
-        <details><summary>Is this for complete beginners?<span>+</span></summary><p>Yes. If you can use email and a web browser, you can participate. The five-person cap gives us time to help everyone individually.</p></details>
-        <details><summary>Why is the pilot $149 instead of $300?<span>+</span></summary><p>The founding cohort is a market test. You receive the full two-hour workshop at a pilot rate in exchange for candid feedback. Future custom clinics with pre-work and private follow-up will be priced higher.</p></details>
-        <details><summary>What should I bring?<span>+</span></summary><p>A charged laptop, access to an AI assistant such as ChatGPT, and examples of one repetitive task. Remove private client or employee information before the workshop.</p></details>
-        <details><summary>When and where is the first session?<span>+</span></summary><p>We are matching the first five applicants by schedule. The application asks for your preferred time; the final central San Diego room and date will be confirmed before any deposit is requested.</p></details>
-        <details><summary>What happens after I apply?<span>+</span></summary><p>You will receive a fit and schedule confirmation. If the cohort is a match, a $49 payment link reserves your seat and the remaining $100 is due before the workshop.</p></details>
-      </div>
-    </section>
-
-    <section class="closing-section reveal">
-      <p class="eyebrow light"><span></span> Five founding seats</p>
-      <h2>What would you do with<br><em>five hours back?</em></h2>
-      <p>Tell us which task is slowing you down. Your answers help us build the room—and the lesson—around real San Diego businesses.</p>
-      <a class="button button-light" href="events/save-five-hours/">Apply for the pilot workshop <span aria-hidden="true">↗</span></a>
-    </section>
+    <footer><span>AI Workbench San Diego</span><span>Applications for the founding workshop are open.</span></footer>
   </main>
 
-  <footer>
-    <a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>AI Workbench <small>San Diego</small></span></a>
-    <p>Practical, small-room AI education for local business owners.</p>
-    <div><a href="events/save-five-hours/">Pilot workshop</a><span>Applications open</span><span>© <span data-year></span></span></div>
-  </footer>
-  <script src="assets/site.js"></script>
+  <script src="assets/workshop.js"></script>
 </body>
 </html>

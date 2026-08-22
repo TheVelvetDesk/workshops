@@ -15,6 +15,10 @@
 
 Bring the task that steals your time. In two focused hours, turn it into a workflow you can use again next week—not a folder of lecture notes.
 
+## Public page approach
+
+The GitHub Page is a standalone workshop sheet rather than a broader company website. It includes only the premise, essential logistics, condensed agenda, takeaways, and application. Detailed preparation instructions and payment information are sent after an applicant is matched to a cohort.
+
 ## First event
 
 **AI for Small-Business Owners: Save Five Hours a Week**
