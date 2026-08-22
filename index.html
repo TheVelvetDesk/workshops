@@ -1,178 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Coding San Diego | Build Together</title>
-    <meta name="description"
-        content="San Diego's first exclusive Vibe Coding club. We match you with a squad of 5 to build the future using AI.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Workbench San Diego | Hands-on AI workshops for small business</title>
+  <meta name="description" content="Small-room, hands-on AI workshops for San Diego business owners. Bring one recurring task and leave with a tested, reusable workflow.">
+  <meta name="theme-color" content="#f5f1e8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-
 <body>
-    <div class="noise-overlay"></div>
-
-    <nav class="navbar">
-        <div class="logo">VibeCoding<span class="highlight">SD</span></div>
-        <div class="nav-links">
-            <a href="#mission">Mission</a>
-            <a href="#how-it-works">The Process</a>
-            <a href="#join" class="cta-button small">Apply Now</a>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AI Workbench San Diego home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>AI Workbench <small>San Diego</small></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#format">How it works</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#questions">Questions</a>
+      <a class="button button-small" href="events/save-five-hours/">Apply for the pilot</a>
     </nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
 
-    <header class="hero">
-        <div class="hero-content">
-            <div class="badge">San Diego's Exclusive AI Builder Club</div>
-            <h1>Code at the <br><span class="gradient-text">Speed of Thought.</span> <br>Together.</h1>
-            <p class="hero-sub">We curate squads of 5 ambitious builders. We provide the space. You bring the vibe and
-                build the future.</p>
-            <div class="cta-group">
-                <a href="#join" class="cta-button primary">Apply for the Next Cohort</a>
-                <span class="price-tag">$100 / Session • Curated Groups • Premium Space</span>
-            </div>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> In-person · five seats · no coding</p>
+        <h1>Bring the task that <em>steals your time.</em></h1>
+        <p class="hero-lede">In two focused hours, turn one repetitive business task into a practical AI workflow you can use again next week—not a folder of lecture notes.</p>
+        <div class="hero-actions">
+          <a class="button" href="events/save-five-hours/">Apply for the first workshop <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#format">See what you will build <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="hero-visual">
-            <div class="glow-orb"></div>
-            <div class="code-card">
-                <div class="card-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-                <div class="card-body">
-                    <div class="typing-effect">> match_squad(user_id="you", location="SD")</div>
-                    <div class="response">Found: 4 compatible builders.</div>
-                    <div class="response">Skillset: [Design, Backend, AI, Growth]</div>
-                    <div class="response">Status: <span class="success">Ready to ship.</span></div>
-                </div>
-            </div>
-        </div>
-    </header>
+        <dl class="hero-facts" aria-label="Workshop facts">
+          <div><dt>120</dt><dd>hands-on minutes</dd></div>
+          <div><dt>5</dt><dd>owners per room</dd></div>
+          <div><dt>1</dt><dd>workflow built</dd></div>
+        </dl>
+      </div>
 
-    <section id="mission" class="mission-section">
-        <div class="container">
-            <h2>The Mission</h2>
-            <p class="mission-text">
-                Coding used to be about syntax errors and missing semicolons. <span class="white">Not anymore.</span>
-                <br><br>
-                We believe in <strong>Vibe Coding</strong>: the art of directing AI to build your vision while you stay
-                in the flow.
-                But flow is better with friends. We exist to bring San Diego's most creative builders out of isolation
-                and into a room where energy is contagious, ideas are amplified, and products actually get shipped.
-            </p>
+      <div class="hero-board reveal" aria-label="Example workshop outcome">
+        <div class="board-top"><span>WORKFLOW / 001</span><span class="live-dot">Built in the room</span></div>
+        <div class="paper-note note-task">
+          <small>THE TASK</small>
+          <strong>Turn job notes into a clear customer follow-up</strong>
+          <span>Current time: 35 min × 8 / week</span>
         </div>
+        <div class="flow-line"><i></i><span></span><i></i><span></span><i></i></div>
+        <div class="workflow-row">
+          <div><small>01 · INPUT</small><b>Job notes</b></div>
+          <div><small>02 · AI DRAFT</small><b>Prompt system</b></div>
+          <div><small>03 · HUMAN CHECK</small><b>Review list</b></div>
+        </div>
+        <div class="paper-note note-result">
+          <small>THE RESULT</small>
+          <strong>20 minutes saved each time</strong>
+          <span>≈ 2 hours 40 minutes back every week</span>
+        </div>
+        <div class="pencil-mark" aria-hidden="true">useful &gt; impressive</div>
+      </div>
     </section>
 
-    <section id="how-it-works" class="process-section">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">01</div>
-                    <h3>The Vibe Check</h3>
-                    <p>You're not just a resume. We want to know what lights you up. You apply, we vet your skills, your
-                        vibe, and your vision to ensure high-quality peers.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">02</div>
-                    <h3>The Draft</h3>
-                    <p>We curate a "Squad" of compatible builders. Designers, backend wizards, prompt engineers—balanced
-                        to build a complete product.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">03</div>
-                    <h3>The Session</h3>
-                    <p>We host the space. A premium office in SD. High-speed internet, whiteboards, and zero
-                        distractions. You show up, meet your squad, and build.</p>
-                </div>
-            </div>
-        </div>
+    <section class="trust-strip" aria-label="Who the workshop is for">
+      <span>Built for the people doing the work:</span>
+      <ul><li>Owner-operators</li><li>Office managers</li><li>Consultants</li><li>Small teams</li></ul>
     </section>
 
-    <section class="vibe-section">
-        <div class="container">
-            <div class="vibe-grid">
-                <div class="vibe-text">
-                    <h2>Stop Coding Alone.</h2>
-                    <ul class="benefits-list">
-                        <li>
-                            <span class="icon">⚡</span>
-                            <div>
-                                <strong>Curated Network</strong>
-                                <p>No random networking events. Meet people you actually want to build with.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="icon">🏢</span>
-                            <div>
-                                <strong>IRL Energy</strong>
-                                <p>Zoom calls kill creativity. Physical presence ignites it.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="icon">🚀</span>
-                            <div>
-                                <strong>Ship Faster</strong>
-                                <p>With a squad and AI, you'll build in a day what used to take a month.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section class="problem-section" id="format">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> The workbench format</p>
+        <h2>Less watching.<br><em>More working.</em></h2>
+      </div>
+      <div class="principle-grid">
+        <article class="principle reveal"><span class="index">01</span><h3>Start with your real task</h3><p>Bring a recurring email, document, follow-up, research task, or planning process. We map the steps before opening an AI tool.</p></article>
+        <article class="principle reveal"><span class="index">02</span><h3>Build beside a guide</h3><p>You create the prompt, inputs, and review checklist on your own laptop. We troubleshoot together while the group stays small.</p></article>
+        <article class="principle reveal"><span class="index">03</span><h3>Leave with a system</h3><p>Take home a reusable workflow card, tested output, time-saved estimate, safety boundary, and your next automation opportunity.</p></article>
+      </div>
     </section>
 
-    <section id="join" class="cta-section">
-        <div class="container">
-            <div class="cta-box">
-                <h2>Ready to find your Squad?</h2>
-                <p>Spots are limited to ensure quality matches. Join the waitlist for the next San Diego session.</p>
-                <form class="signup-form" action="https://formspree.io/f/mbdokbkq" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit" class="cta-button primary">Request Invite</button>
-                </form>
-                <p class="small-print">Submissions are emailed to the address connected to your Formspree form.</p>
-                <p class="small-print">San Diego, CA • In-Person Only</p>
-            </div>
+    <section class="featured-workshop" id="workshops">
+      <div class="event-ticket reveal">
+        <div class="ticket-main">
+          <div class="ticket-meta"><span>FOUNDING WORKSHOP · 01</span><span>SAN DIEGO, CA</span></div>
+          <p class="eyebrow"><span></span> Beginner-friendly</p>
+          <h2>AI for Small-Business Owners:<br><em>Save Five Hours a Week</em></h2>
+          <p>Choose one repetitive task and build a safe, repeatable workflow around it. You do not need to be “good at technology.” You do need to bring a laptop and a real task.</p>
+          <ul class="event-details">
+            <li><small>FORMAT</small><strong>2 hours · in person</strong></li>
+            <li><small>COHORT</small><strong>Maximum 5 people</strong></li>
+            <li><small>PILOT PRICE</small><strong>$149 total</strong></li>
+            <li><small>RESERVATION</small><strong>$49 after date confirmation</strong></li>
+          </ul>
+          <a class="button" href="events/save-five-hours/">View the workshop & apply <span aria-hidden="true">↗</span></a>
         </div>
+        <aside class="ticket-stub">
+          <span class="vertical-label">PILOT COHORT</span>
+          <div class="seat-count"><b>05</b><span>seats only</span></div>
+          <div class="barcode" aria-hidden="true"></div>
+          <small>Date chosen with the first matched cohort</small>
+        </aside>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">VibeCodingSD</div>
-                <div class="socials">
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Email</a>
-                </div>
-            </div>
-            <div class="copyright">© 2025 Vibe Coding San Diego. All rights reserved.</div>
-        </div>
-    </footer>
+    <section class="outcomes-section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow"><span></span> Your four decisions</p>
+        <h2>Every seat ends with <em>something usable.</em></h2>
+      </div>
+      <div class="outcome-list">
+        <div class="outcome reveal"><span>01</span><p>One task to start using AI for</p><i>→</i></div>
+        <div class="outcome reveal"><span>02</span><p>One task that should not use AI</p><i>→</i></div>
+        <div class="outcome reveal"><span>03</span><p>Your estimated weekly time saved</p><i>→</i></div>
+        <div class="outcome reveal"><span>04</span><p>Your next automation opportunity</p><i>→</i></div>
+      </div>
+    </section>
 
-    <script>
-        // Simple intersection observer for fade-in animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+    <section class="fit-section">
+      <div class="fit-card fit-yes reveal"><span class="stamp">GOOD FIT</span><h3>You will get value if…</h3><ul><li>You repeat the same writing, research, follow-up, or planning task every week.</li><li>You want practical help, not an AI trend lecture.</li><li>You are willing to test the output and keep a human in charge.</li></ul></div>
+      <div class="fit-card fit-no reveal"><span class="stamp">NOT YET</span><h3>This is not the room if…</h3><ul><li>You want a fully automated business built for you in two hours.</li><li>You plan to upload passwords or sensitive customer, health, legal, or financial data.</li><li>You need advanced engineering or custom software development.</li></ul></div>
+    </section>
 
-        document.querySelectorAll('.step-card, .mission-text, .benefits-list li').forEach((el) => {
-            el.classList.add('fade-in');
-            observer.observe(el);
-        });
-    </script>
+    <section class="faq-section" id="questions">
+      <div class="section-heading compact reveal"><p class="eyebrow"><span></span> Straight answers</p><h2>Before you <em>bring your laptop.</em></h2></div>
+      <div class="faq-list">
+        <details><summary>Is this for complete beginners?<span>+</span></summary><p>Yes. If you can use email and a web browser, you can participate. The five-person cap gives us time to help everyone individually.</p></details>
+        <details><summary>Why is the pilot $149 instead of $300?<span>+</span></summary><p>The founding cohort is a market test. You receive the full two-hour workshop at a pilot rate in exchange for candid feedback. Future custom clinics with pre-work and private follow-up will be priced higher.</p></details>
+        <details><summary>What should I bring?<span>+</span></summary><p>A charged laptop, access to an AI assistant such as ChatGPT, and examples of one repetitive task. Remove private client or employee information before the workshop.</p></details>
+        <details><summary>When and where is the first session?<span>+</span></summary><p>We are matching the first five applicants by schedule. The application asks for your preferred time; the final central San Diego room and date will be confirmed before any deposit is requested.</p></details>
+        <details><summary>What happens after I apply?<span>+</span></summary><p>You will receive a fit and schedule confirmation. If the cohort is a match, a $49 payment link reserves your seat and the remaining $100 is due before the workshop.</p></details>
+      </div>
+    </section>
+
+    <section class="closing-section reveal">
+      <p class="eyebrow light"><span></span> Five founding seats</p>
+      <h2>What would you do with<br><em>five hours back?</em></h2>
+      <p>Tell us which task is slowing you down. Your answers help us build the room—and the lesson—around real San Diego businesses.</p>
+      <a class="button button-light" href="events/save-five-hours/">Apply for the pilot workshop <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>AI Workbench <small>San Diego</small></span></a>
+    <p>Practical, small-room AI education for local business owners.</p>
+    <div><a href="events/save-five-hours/">Pilot workshop</a><span>Applications open</span><span>© <span data-year></span></span></div>
+  </footer>
+  <script src="assets/site.js"></script>
 </body>
-
 </html>
