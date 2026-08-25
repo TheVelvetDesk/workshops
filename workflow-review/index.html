@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Apply for a personalized workflow review and discover whether AI can reduce a recurring task in your business." />
+    <meta name="theme-color" content="#241925" />
+    <title>Personalized Workflow Review | The Velvet Desk</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Qualification forms home">
+        <span class="brand-mark">VD</span>
+        <span><strong>The Velvet Desk</strong><small>Practical AI for real business</small></span>
+      </a>
+      <span class="time-estimate">8–10 minute application</span>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow">Personalized workflow assessment</p>
+          <h1>What recurring task is taking too much of your week?</h1>
+          <p class="lede">Show us one task you repeat regularly. We’ll assess whether AI or automation could realistically reduce the work and help you recover meaningful time.</p>
+          <div class="trust-row">
+            <span>✓ Human-reviewed</span><span>✓ Specific to your business</span><span>✓ No generic group call</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" aria-label="How the workflow review works">
+        <article><span>01</span><div><strong>Describe one workflow</strong><small>Clear, specific and recurring</small></div></article>
+        <article><span>02</span><div><strong>We assess the opportunity</strong><small>Time, tools and feasibility</small></div></article>
+        <article><span>03</span><div><strong>Receive a private plan</strong><small>Only when there is a strong fit</small></div></article>
+      </section>
+
+      <div class="form-layout" id="application">
+        <aside class="progress-card">
+          <p>Application progress</p>
+          <ol id="progress-list">
+            <li class="active"><span>01</span><div><strong>You</strong><small>About you and the business</small></div></li>
+            <li><span>02</span><div><strong>Task</strong><small>The workflow to improve</small></div></li>
+            <li><span>03</span><div><strong>Time</strong><small>Weekly hours, people and tools</small></div></li>
+            <li><span>04</span><div><strong>Fit</strong><small>Judgment and exceptions</small></div></li>
+          </ol>
+          <div class="privacy-note"><strong>Keep private information private.</strong><p>Do not include passwords, payment details, customer records, medical information or confidential documents.</p></div>
+        </aside>
+
+        <form id="workflow-form" class="workflow-form" novalidate>
+          <input type="hidden" name="track" value="workflow-review" />
+          <header class="form-heading"><span id="section-count">01 / 04</span><div><h2 id="section-title">A little about you</h2><p id="section-description">So we understand the business behind the workflow.</p></div></header>
+
+          <section class="form-panel" data-step="0">
+            <div class="field-grid two">
+              <label><span>Your name *</span><input name="applicantName" required autocomplete="name" placeholder="First and last name" /></label>
+              <label><span>Email *</span><input name="email" type="email" required autocomplete="email" placeholder="you@business.com" /></label>
+            </div>
+            <div class="field-grid two">
+              <label><span>Business name *</span><input name="businessName" required placeholder="Your company or practice" /></label>
+              <label><span>Your role *</span><input name="role" required placeholder="Owner, manager, consultant…" /></label>
+            </div>
+            <label><span>What kind of business is it? *</span><input name="businessType" required placeholder="Property management, ecommerce, bookkeeping…" /><small>A short description is enough.</small></label>
+            <div class="field-grid two optional-row">
+              <label><span>Phone <i>optional</i></span><input name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you" /></label>
+              <label><span>Website <i>optional</i></span><input name="website" type="url" placeholder="https://" /></label>
+            </div>
+            <label class="bot-field" aria-hidden="true"><span>Company website</span><input name="companyWebsite" tabindex="-1" autocomplete="off" /></label>
+          </section>
+
+          <section class="form-panel" data-step="1" hidden>
+            <label><span>Give the task a short name *</span><input name="workflowTitle" required placeholder="Processing new client inquiries" /><small>Choose one task that happens repeatedly.</small></label>
+            <label><span>What are you trying to get done? *</span><textarea name="workflowDescription" required rows="4" placeholder="Explain the task in everyday language and why it matters."></textarea></label>
+            <label><span>What causes the task to begin? *</span><textarea name="trigger" required rows="3" placeholder="A customer completes our website form, or every Friday I receive a new spreadsheet."></textarea><small>This is the trigger that tells you it is time to start.</small></label>
+            <label><span>Walk us through the steps you currently take *</span><textarea name="steps" required rows="7" placeholder="1. I open the form response&#10;2. I copy the details into our spreadsheet&#10;3. I check whether the customer qualifies&#10;4. I write and send a response"></textarea><small>Include manual copying, checking, waiting and follow-up.</small></label>
+          </section>
+
+          <section class="form-panel" data-step="2" hidden>
+            <label><span>About how many hours per week does this task take? *</span><input name="hoursPerWeek" required type="number" min="0.25" max="168" step="0.25" inputmode="decimal" placeholder="5" /><small>Your best estimate is enough. Include everyone’s time if more than one person works on it.</small></label>
+            <div class="calculation-note"><span>Why we ask</span><p>This helps us compare the current effort with the time a realistic solution could recover.</p></div>
+            <label><span>Which apps, websites or tools are involved? *</span><textarea name="tools" required rows="3" placeholder="Gmail, Google Sheets, HubSpot, QuickBooks, WhatsApp…"></textarea></label>
+            <label><span>What information goes in, and what should come out? *</span><textarea name="inputsOutputs" required rows="4" placeholder="We receive a name, email and project description. The final result is a qualified lead in HubSpot with a drafted response."></textarea></label>
+            <label><span>Who else is involved? <i>optional</i></span><textarea name="peopleInvolved" rows="3" placeholder="Employees, customers, vendors or anyone who approves part of the task."></textarea></label>
+          </section>
+
+          <section class="form-panel" data-step="3" hidden>
+            <label><span>What decisions require a person’s judgment? *</span><textarea name="judgment" required rows="4" placeholder="I decide whether the lead is a good fit and whether the request needs a custom price."></textarea><small>“None” is a valid answer if the same rules always apply.</small></label>
+            <label><span>What unusual situations or exceptions occur? <i>optional</i></span><textarea name="exceptions" rows="3" placeholder="Tell us what sometimes causes the normal process to change."></textarea></label>
+
+            <fieldset class="choice-field"><legend>Does the task involve sensitive information? *</legend><p>Financial, legal, medical, employee or private customer information.</p><div><label><input type="radio" name="sensitiveData" value="No" required /><span>No</span></label><label><input type="radio" name="sensitiveData" value="Yes" /><span>Yes</span></label><label><input type="radio" name="sensitiveData" value="Unsure" /><span>Unsure</span></label></div></fieldset>
+            <fieldset class="choice-field"><legend>Could you show us a redacted example or short screen recording later? *</legend><p>Do not upload anything now. We may ask after the initial review.</p><div><label><input type="radio" name="sampleAvailable" value="Yes" required /><span>Yes</span></label><label><input type="radio" name="sampleAvailable" value="Maybe" /><span>Maybe</span></label><label><input type="radio" name="sampleAvailable" value="No" /><span>No</span></label></div></fieldset>
+            <label><span>What would a successful solution look like? *</span><textarea name="desiredOutcome" required rows="4" placeholder="What should happen faster or automatically? What would you still want to review yourself?"></textarea></label>
+            <fieldset class="choice-field"><legend>Would you be willing to adjust the current process if needed? *</legend><div><label><input type="radio" name="willingToChange" value="Yes" required /><span>Yes</span></label><label><input type="radio" name="willingToChange" value="It depends" /><span>It depends</span></label><label><input type="radio" name="willingToChange" value="No" /><span>No</span></label></div></fieldset>
+            <label><span>Anything else we should know? <i>optional</i></span><textarea name="additionalNotes" rows="3" placeholder="Add any detail that would help us understand the task."></textarea></label>
+            <label class="consent-row"><input type="checkbox" required /><span>I understand this is an application for a workflow review and does not guarantee that my task can be automated or accepted.</span></label>
+          </section>
+
+          <div id="form-error" class="form-error" role="alert" hidden></div>
+          <footer class="form-navigation">
+            <button id="back-button" type="button" class="back-button" disabled>← Back</button>
+            <button id="next-button" type="button" class="next-button">Continue <span>→</span></button>
+            <button id="submit-button" type="submit" class="next-button submit-button" hidden>Submit for review <span>→</span></button>
+          </footer>
+        </form>
+
+        <section id="success-card" class="success-card" hidden>
+          <span class="success-check">✓</span>
+          <p class="eyebrow" id="success-reference">Application received</p>
+          <h2>Thank you. We’ll review the workflow.</h2>
+          <p>We’ll assess its frequency, steps, tools, judgment and potential time savings. If it appears to be a strong fit, we’ll contact you about the next step.</p>
+          <div class="success-next"><strong>What happens next</strong><ol><li>We screen the workflow for feasibility.</li><li>We may email you with a clarifying question.</li><li>Qualified workflows are invited to a private audit.</li></ol></div>
+        </section>
+      </div>
+      <nav class="other-tracks" aria-label="Qualification forms"><span>Qualification forms</span><a href="../workflow-review/" class="current" aria-current="page">Workflow Review</a><a href="../ai-essentials/">AI Essentials</a><a href="../ai-development/">AI Development</a><a href="../ai-marketing-creative/">AI Marketing & Creative</a><a href="../ai-sales/">AI Sales</a><a href="../ai-customer-service/">AI Customer Service</a><a href="../">Workshops home</a></nav>
+    </main>
+
+    <footer class="site-footer"><strong>The Velvet Desk</strong><span>Practical AI. Measurable time savings.</span></footer>
+    <script src="../workflow-form.js" defer></script>
+  </body>
+</html>
