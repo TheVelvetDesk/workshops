@@ -2,7 +2,7 @@
 
 A standalone workshop information and application page for small-room, hands-on AI education in San Diego.
 
-Live site: <https://thevelvetdesk.github.io/ai-workbench-san-diego/>
+Live site: <https://thevelvetdesk.github.io/workshops/>
 
 ## Structure
 
@@ -32,15 +32,15 @@ Then open `http://127.0.0.1:4173`.
 2. Choose the first date and reserve a room only after the minimum paid-seat threshold is met.
 3. Prepare the follow-up email, secure deposit link, and refund terms before requesting payment.
 
-## Qualification forms
+## AI questionnaires
 
-Six track-specific qualification questionnaires are published under `qualification/`:
+Six track-specific questionnaires are published directly under the site:
 
-- Workflow Review
-- AI Essentials
-- AI Development
-- AI Marketing & Creative
-- AI Sales
-- AI Customer Service
+- `workflow-review/` — Workflow Review
+- `ai-essentials/` — AI Essentials
+- `ai-development/` — AI Development
+- `ai-marketing-creative/` — AI Marketing & Creative
+- `ai-sales/` — AI Sales
+- `ai-customer-service/` — AI Customer Service
 
 All forms submit to the private application dashboard. Public source files intentionally exclude notification addresses and private dashboard links.
