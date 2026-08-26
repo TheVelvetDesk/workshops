@@ -7,6 +7,8 @@ Live site: <https://thevelvetdesk.github.io/workshops/>
 ## Structure
 
 - `index.html` — central hub linking all workshop questionnaires
+- `privacy/` — California-focused privacy notice and notice at collection
+- `ai-governance/` — AI governance and responsible-use policy
 - `events/save-five-hours/` — legacy redirect to the AI automation Workflow Review
 - `LAUNCH-PLAN.md` — target market, pricing, curriculum ladder, channel plan, and validation metrics
 
