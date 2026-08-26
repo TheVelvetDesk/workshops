@@ -49,6 +49,7 @@
 
         <form id="workflow-form" class="workflow-form" novalidate>
           <input type="hidden" name="track" value="workflow-review" />
+          <div class="notice-at-collection"><strong>Notice at collection.</strong> We collect your contact, business and questionnaire information to review this application, communicate with you and protect the service. We do not sell it or share it for behavioral advertising. <a href="../privacy/#notice-at-collection" target="_blank" rel="noopener">See categories, purposes and retention</a>.</div>
           <header class="form-heading"><span id="section-count">01 / 04</span><div><h2 id="section-title">A little about you</h2><p id="section-description">So we understand the business behind the workflow.</p></div></header>
 
           <section class="form-panel" data-step="0">
@@ -92,7 +93,7 @@
             <label><span>What would a successful solution look like? *</span><textarea name="desiredOutcome" required rows="4" placeholder="What should happen faster or automatically? What would you still want to review yourself?"></textarea></label>
             <fieldset class="choice-field"><legend>Would you be willing to adjust the current process if needed? *</legend><div><label><input type="radio" name="willingToChange" value="Yes" required /><span>Yes</span></label><label><input type="radio" name="willingToChange" value="It depends" /><span>It depends</span></label><label><input type="radio" name="willingToChange" value="No" /><span>No</span></label></div></fieldset>
             <label><span>Anything else we should know? <i>optional</i></span><textarea name="additionalNotes" rows="3" placeholder="Add any detail that would help us understand the task."></textarea></label>
-            <label class="consent-row"><input type="checkbox" required /><span>I understand this is an application for a workflow review and does not guarantee that my task can be automated or accepted.</span></label>
+            <label class="consent-row"><input type="checkbox" required /><span>I have read the <a href="../privacy/" target="_blank" rel="noopener">Privacy Notice</a> and understand this application does not guarantee that my task can be automated or accepted.</span></label>
           </section>
 
           <div id="form-error" class="form-error" role="alert" hidden></div>
@@ -114,7 +115,7 @@
       <nav class="other-tracks" aria-label="Qualification forms"><span>Qualification forms</span><a href="../workflow-review/" class="current" aria-current="page">Workflow Review</a><a href="../ai-essentials/">AI Essentials</a><a href="../ai-development/">AI Development</a><a href="../ai-marketing-creative/">AI Marketing & Creative</a><a href="../ai-sales/">AI Sales</a><a href="../ai-customer-service/">AI Customer Service</a><a href="../">Workshops home</a></nav>
     </main>
 
-    <footer class="site-footer"><strong>The Velvet Desk</strong><span>Practical AI. Measurable time savings.</span></footer>
+    <footer class="site-footer"><strong>The Velvet Desk</strong><span>Practical AI. Measurable time savings.</span><nav class="policy-links" aria-label="Policies"><a href="../privacy/">Privacy Notice</a><a href="../ai-governance/">AI Governance</a></nav></footer>
     <script src="../workflow-form.js" defer></script>
   </body>
 </html>
