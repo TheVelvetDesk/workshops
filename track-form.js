@@ -147,7 +147,7 @@ root.innerHTML = `
     <div class="privacy-note"><strong>Keep private information private.</strong><p>Do not include passwords, payment details, customer records, medical information or confidential documents.</p></div>
   </aside>
   <form id="track-form" class="workflow-form" novalidate>
-    <input type="hidden" name="track" value="${escapeHtml(trackId)}" />
+    <input type="hidden" name="track" value="${escapeHtml(trackId)}" />\n    <div class="notice-at-collection"><strong>Notice at collection.</strong> We collect your contact, business and questionnaire information to review this application, communicate with you and protect the service. We do not sell it or share it for behavioral advertising. <a href="../privacy/#notice-at-collection" target="_blank" rel="noopener">See categories, purposes and retention</a>.</div>
     <header class="form-heading"><span id="section-count">01 / 04</span><div><h2 id="section-title">A little about you</h2><p id="section-description">So we understand the person and business behind the application.</p></div></header>
     <section class="form-panel" data-step="0">
       <div class="field-grid two">
@@ -169,7 +169,7 @@ root.innerHTML = `
     <section class="form-panel" data-step="2" hidden>${config.qualifying.map(fieldMarkup).join("")}</section>
     <section class="form-panel" data-step="3" hidden>
       ${fitFields.map(fieldMarkup).join("")}
-      <label class="consent-row"><input type="checkbox" name="consent" value="Yes" required /><span>I understand this questionnaire helps The Velvet Desk assess fit and recommend a next step; submitting it does not guarantee acceptance into a course or private engagement.</span></label>
+      <label class="consent-row"><input type="checkbox" name="consent" value="Yes" required /><span>I have read the <a href="../privacy/" target="_blank" rel="noopener">Privacy Notice</a> and understand this questionnaire helps The Velvet Desk assess fit and recommend a next step; submitting it does not guarantee acceptance.</span></label>
     </section>
     <div id="form-error" class="form-error" role="alert" hidden></div>
     <footer class="form-navigation">
