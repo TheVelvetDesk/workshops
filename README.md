@@ -1,15 +1,16 @@
 # AI Workbench San Diego
 
-A standalone workshop information and application page for small-room, hands-on AI education in San Diego.
+A central hub for The Velvet Desk AI workshops and track-specific qualification questionnaires.
 
 Live site: <https://thevelvetdesk.github.io/workshops/>
 
 ## Structure
 
-- `index.html` — complete workshop information and signup page
+- `index.html` — central hub linking all questionnaires and the featured workshop
+- `save-five-hours/` — complete workshop information and signup page
 - `assets/workshop.css` — focused responsive presentation
 - `assets/workshop.js` — application validation and Formspree submission
-- `events/save-five-hours/` — redirect retained for previously shared links
+- `events/save-five-hours/` — redirect retained for previously shared workshop links
 - `LAUNCH-PLAN.md` — target market, pricing, curriculum ladder, channel plan, and validation metrics
 
 ## Application setup
