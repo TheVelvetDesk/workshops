@@ -1,12 +1,15 @@
-# AI Workbench San Diego
+# The Velvet Desk AI Workshops
 
-A central hub for The Velvet Desk track-specific AI workshop questionnaires.
+The production home for The Velvet Desk AI workshop event pages and track-specific questionnaires.
 
 Live site: <https://thevelvetdesk.github.io/workshops/>
 
 ## Structure
 
-- `index.html` — central hub linking all workshop questionnaires
+- `index.html` — AI for Business workshop landing page
+- `register/` — online-interest and workshop-goals questionnaire
+- `workshop.css` and `workshop.js` — event-page styles and behavior
+- The track directories below retain the existing workshop questionnaires and continue to use `styles.css` plus the shared form scripts.
 - `privacy/` — California-focused privacy notice and notice at collection
 - `ai-governance/` — AI governance and responsible-use policy
 - `events/save-five-hours/` — legacy redirect to the AI automation Workflow Review
