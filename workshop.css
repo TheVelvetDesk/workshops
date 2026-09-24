@@ -49,7 +49,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .text-link { min-height: 44px; display: inline-flex; align-items: center; border-bottom: 1px solid rgba(242, 233, 222, .42); text-decoration: none; font: 400 .7rem/1.3 var(--mono); }
 .text-link:hover { border-color: var(--gold); color: var(--gold); }
 
-.hero { position: relative; isolation: isolate; min-height: 900px; overflow: hidden; padding: 180px 0 100px; background: radial-gradient(circle at 78% 45%, rgba(109, 20, 46, .55), transparent 31%), linear-gradient(135deg, #090708 0%, #160b10 62%, #080607 100%); }
+.hero { position: relative; isolation: isolate; min-height: 0; overflow: hidden; padding: 180px 0 100px; background: radial-gradient(circle at 78% 45%, rgba(109, 20, 46, .55), transparent 31%), linear-gradient(135deg, #090708 0%, #160b10 62%, #080607 100%); }
 .hero::before { content: ""; position: absolute; z-index: -2; inset: 0; background-image: linear-gradient(rgba(242, 233, 222, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(242, 233, 222, .04) 1px, transparent 1px); background-size: 7vw 7vw; mask-image: linear-gradient(90deg, #000, transparent 68%); }
 .hero::after { content: ""; position: absolute; z-index: -1; inset: auto 0 0; height: 28%; background: linear-gradient(transparent, #0b0809); pointer-events: none; }
 .hero-orbit { position: absolute; z-index: -1; right: -11vw; top: 19%; width: min(58vw, 780px); aspect-ratio: 1; border: 1px solid rgba(201, 166, 111, .22); border-radius: 50%; }
@@ -137,6 +137,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .ticket-bonus h3 { max-width: 540px; margin: 0 0 .85rem; font: 500 clamp(1.55rem, 2.2vw, 2.15rem)/1.1 var(--serif); letter-spacing: -.025em; }
 .ticket-bonus > p:last-child { margin: 0; color: rgba(242,233,222,.62); font-size: .86rem; line-height: 1.75; }
 .ticket-panel { padding: clamp(2rem, 4vw, 3.5rem); border: 1px solid rgba(201,166,111,.36); background: rgba(242,233,222,.035); }
+.hero-ticket-panel { align-self: center; }
 .ticket-heading { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 1.25rem; color: var(--gold); border-bottom: 1px solid var(--line-dark); font: 500 .62rem/1.4 var(--mono); letter-spacing: .09em; text-transform: uppercase; }
 .ticket-heading span:last-child { color: rgba(242,233,222,.4); font-size: .55rem; }
 .ticket-row { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line-dark); }
@@ -253,11 +254,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 
 @media (max-width: 980px) {
   .hero { min-height: 0; }
-  .hero-grid, .premise-grid, .curriculum-grid, .audience-grid, .interest-grid, .faq-grid { grid-template-columns: 1fr; }
+  .hero-grid, .curriculum-grid, .faq-grid { grid-template-columns: 1fr; }
   .hero-grid { gap: 3rem; }
   .hero-copy { max-width: 800px; }
   .workshop-object { min-height: 560px; width: min(620px, 100%); margin-inline: auto; }
-  .premise-grid, .curriculum-grid, .faq-grid { gap: 4rem; }
+  .curriculum-grid, .faq-grid { gap: 4rem; }
   .curriculum-intro { position: static; }
   .outcomes-heading { grid-template-columns: 1fr; gap: 1.8rem; }
   .outcome-grid { grid-template-columns: repeat(2, 1fr); }
@@ -296,19 +297,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   .object-note { font-size: .48rem; }
   .object-note-one { top: 23%; }
   .object-note-two { right: 0; bottom: 13%; }
-  .premise, .outcomes, .curriculum, .audience, .interest, .faq { padding-block: 6.5rem; }
-  .premise-copy h2, .outcomes-heading h2, .curriculum-intro h2, .interest-copy h2 { font-size: clamp(3rem, 14vw, 4.6rem); }
-  .premise-copy p { font-size: .96rem; }
+  .outcomes, .curriculum, .faq { padding-block: 6.5rem; }
+  .outcomes-heading h2, .curriculum-intro h2 { font-size: clamp(3rem, 14vw, 4.6rem); }
   .outcome-grid { grid-template-columns: 1fr; }
   .outcome-grid article { min-height: 0; padding: 2rem 0 2.5rem; border-top: 1px solid var(--line-light); }
   .outcome-grid article:first-child { border-top: 0; }
   .outcome-grid article + article { padding-left: 0; border-left: 0; }
   .outcome-grid h3 { margin-top: 2.8rem; }
-  .curriculum-grid, .audience-grid, .interest-grid, .faq-grid { gap: 3.5rem; }
+  .curriculum-grid, .faq-grid { gap: 3.5rem; }
   .curriculum-list li { grid-template-columns: 2rem 1fr; gap: .8rem; }
-  .audience-copy h2 { font-size: clamp(3.7rem, 17vw, 5.6rem); }
-  .bring-card { box-shadow: 9px 12px 0 #cdbfac; }
-  .interest-form { padding: 1.5rem; }
   .ticket-panel { padding: 1.5rem; }
   .ticket-regular { align-items: flex-start; flex-direction: column; }
   .faq summary { min-height: 76px; gap: 1rem; }
