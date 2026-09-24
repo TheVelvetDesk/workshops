@@ -1,0 +1,160 @@
+.session-body { color: var(--ink); background: var(--paper); }
+.session-page { overflow: hidden; }
+.session-masthead { position: absolute; }
+.session-hero { position: relative; isolation: isolate; padding: 180px 0 120px; color: var(--cream); background: radial-gradient(circle at 76% 48%, rgba(109,20,46,.62), transparent 31%), linear-gradient(135deg, #090708 0%, #170b10 65%, #080607 100%); }
+.session-hero::before { content: ""; position: absolute; z-index: -2; inset: 0; background-image: linear-gradient(rgba(242,233,222,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(242,233,222,.04) 1px, transparent 1px); background-size: 7vw 7vw; mask-image: linear-gradient(90deg, #000, transparent 75%); }
+.session-hero::after { content: ""; position: absolute; z-index: -1; right: -12vw; top: 14%; width: min(58vw, 760px); aspect-ratio: 1; border: 1px solid rgba(201,166,111,.22); border-radius: 50%; }
+.session-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(340px, .8fr); gap: clamp(4rem, 10vw, 12rem); align-items: center; }
+.session-hero-copy { position: relative; z-index: 1; }
+.session-hero .eyebrow { display: flex; flex-wrap: wrap; gap: 1rem; color: var(--gold); }
+.session-hero .eyebrow span + span::before { content: "/"; margin-right: 1rem; color: rgba(242,233,222,.3); }
+.session-hero h1 { max-width: 760px; margin: 2rem 0 2rem; font: 500 clamp(4.7rem, 8.6vw, 9rem)/.84 var(--serif); letter-spacing: -.07em; }
+.session-hero h1 em { color: var(--gold); font-weight: 500; }
+.session-hero-deck { max-width: 620px; margin: 0; color: rgba(242,233,222,.67); font-size: clamp(1rem, 1.35vw, 1.2rem); line-height: 1.8; }
+.session-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem; margin-top: 2.4rem; }
+.session-hero-facts { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 620px; margin: 4rem 0 0; padding-top: 1.25rem; border-top: 1px solid var(--line-dark); }
+.session-hero-facts div { padding-right: 1.2rem; }
+.session-hero-facts div + div { padding-left: 1.2rem; border-left: 1px solid var(--line-dark); }
+.session-hero-facts dt { color: rgba(242,233,222,.38); font: 400 .57rem/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.session-hero-facts dd { margin: .45rem 0 0; font-size: .8rem; }
+.session-pass { position: relative; z-index: 1; min-height: 475px; display: flex; flex-direction: column; padding: clamp(2rem, 4vw, 3.4rem); color: var(--ink); background: var(--cream); box-shadow: 22px 25px 0 var(--wine), 0 30px 70px rgba(0,0,0,.32); transform: rotate(2.5deg); }
+.session-pass::before { content: ""; position: absolute; inset: 13px; border: 1px solid rgba(101,20,44,.23); pointer-events: none; }
+.session-pass > * { position: relative; z-index: 1; }
+.session-pass-topline, .session-pass-footer { display: flex; justify-content: space-between; gap: 1rem; color: var(--wine); font: 500 .57rem/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.session-pass-mark { position: relative; width: 82px; height: 82px; display: grid; place-items: center; margin: 4.5rem auto 2.5rem; }
+.session-pass-mark i { position: absolute; width: 58px; height: 58px; border: 1px solid var(--wine); transform: rotate(45deg); }
+.session-pass-mark i:nth-child(2) { width: 38px; height: 38px; border-color: var(--gold); transform: rotate(25deg); }
+.session-pass-mark i:nth-child(3) { width: 16px; height: 16px; background: var(--wine); transform: rotate(45deg); }
+.session-pass h2 { margin: 0; font: 500 clamp(2.5rem, 4.4vw, 4.6rem)/.9 var(--serif); letter-spacing: -.055em; }
+.session-pass h2 em { color: var(--wine); font-weight: 500; }
+.session-pass-price { display: flex; align-items: baseline; gap: .7rem; margin: 2.2rem 0 0; color: var(--wine); }
+.session-pass-price strong { font: 500 clamp(3.3rem, 5vw, 5.2rem)/.8 var(--serif); letter-spacing: -.06em; }
+.session-pass-price span { font: 500 .61rem/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.session-pass dl { margin: auto 0 0; padding-top: 2rem; border-top: 1px solid rgba(101,20,44,.25); }
+.session-pass dl div { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; }
+.session-pass dt { color: rgba(101,20,44,.58); font: 400 .56rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.session-pass dd { margin: 0; color: var(--wine); font: 500 .7rem/1.4 var(--mono); text-align: right; }
+.session-pass-footer { margin-top: 1.8rem; padding-top: 1rem; border-top: 1px solid rgba(101,20,44,.25); }
+
+.session-intro { padding: clamp(7rem, 11vw, 12rem) 0; background: var(--paper); }
+.session-intro-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(4rem, 9vw, 10rem); align-items: start; }
+.session-intro-copy h2 { margin: 2.7rem 0 2rem; font: 500 clamp(3.4rem, 5.8vw, 6.4rem)/.92 var(--serif); letter-spacing: -.06em; }
+.session-intro-copy h2 em { color: var(--wine); font-weight: 500; }
+.session-benefits { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); }
+.session-benefit { min-height: 260px; padding: 1.8rem 1.8rem 2rem 0; }
+.session-benefit + .session-benefit { padding-left: 1.8rem; border-left: 1px solid var(--line-light); }
+.session-benefit > span { color: var(--wine); font: 500 .6rem/1 var(--mono); }
+.session-benefit h3 { margin: 5rem 0 1rem; font: 500 clamp(1.5rem, 2.1vw, 2.15rem)/1.1 var(--serif); letter-spacing: -.03em; }
+.session-benefit p { margin: 0; color: #5d5047; font-size: .88rem; line-height: 1.75; }
+
+.session-booking { padding: clamp(7rem, 11vw, 12rem) 0; color: var(--ink); background: #ded3c5; }
+.booking-grid { display: grid; grid-template-columns: minmax(260px, .68fr) minmax(0, 1.32fr); gap: clamp(4rem, 8vw, 9rem); align-items: start; }
+.session-summary { position: sticky; top: 3rem; }
+.session-summary h2 { max-width: 370px; }
+.session-summary dl { margin-top: 2.2rem; }
+.session-summary .booking-preview { margin-top: 2rem; padding: 1.4rem 0 0; border-top: 1px solid rgba(242,233,222,.24); }
+.session-summary .booking-preview p { margin: 0 0 .7rem; color: var(--gold); font: 500 .56rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.session-summary .booking-preview strong { display: block; color: var(--cream); font: 500 1.25rem/1.2 var(--serif); }
+.session-summary .booking-preview span { display: block; margin-top: .35rem; color: rgba(242,233,222,.65); font: 400 .63rem/1.5 var(--mono); }
+.session-summary .booking-preview .preview-format { color: var(--cream); font: 500 .82rem/1.4 var(--sans); }
+.session-summary .booking-preview .preview-zone { color: var(--gold); }
+.session-summary .summary-note { margin: 1.5rem 0 0; color: rgba(242,233,222,.52); font: 400 .57rem/1.6 var(--mono); }
+.booking-card { min-width: 0; padding: clamp(1.7rem, 3.5vw, 3.2rem); border: 1px solid var(--line-light); background: rgba(255,255,255,.24); }
+.session-form > fieldset { min-width: 0; margin: 0; padding: 0 0 3.2rem; border: 0; }
+.session-form > fieldset + fieldset { padding-top: 3.2rem; border-top: 1px solid var(--line-light); }
+.session-form > fieldset > legend { width: 100%; display: flex; align-items: baseline; gap: 1rem; margin: 0 0 2.2rem; padding: 0; font: 500 clamp(1.8rem, 2.7vw, 2.6rem)/1.2 var(--serif); letter-spacing: -.025em; }
+.session-form > fieldset > legend span { width: 2.2rem; height: 2.2rem; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid var(--wine); border-radius: 50%; color: var(--wine); font: 400 .56rem/1 var(--mono); }
+.calendar-layout { display: grid; grid-template-columns: minmax(250px, .9fr) minmax(230px, 1.1fr); gap: clamp(1.5rem, 3vw, 3rem); align-items: start; }
+.calendar-shell { min-width: 0; }
+.calendar-heading { display: grid; grid-template-columns: 38px 1fr 38px; gap: .5rem; align-items: center; margin-bottom: 1.1rem; }
+.calendar-heading h3 { margin: 0; color: var(--ink); font: 500 1.35rem/1.2 var(--serif); letter-spacing: -.025em; text-align: center; }
+.calendar-nav { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--line-light); color: var(--wine); background: transparent; cursor: pointer; font: 400 1.25rem/1 var(--sans); transition: color .2s ease, background .2s ease, border-color .2s ease; }
+.calendar-nav:hover:not(:disabled) { color: var(--cream); border-color: var(--wine); background: var(--wine); }
+.calendar-nav:disabled { cursor: not-allowed; opacity: .3; }
+.calendar-weekdays, .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); }
+.calendar-weekdays { margin-bottom: .35rem; color: #95867a; font: 500 .51rem/1 var(--mono); letter-spacing: .06em; text-align: center; text-transform: uppercase; }
+.calendar-grid { border-top: 1px solid var(--line-light); border-left: 1px solid var(--line-light); }
+.calendar-day { min-width: 0; min-height: 50px; padding: .45rem 0; border: 0; border-right: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); color: var(--ink); background: rgba(255,255,255,.2); cursor: pointer; font: 500 .78rem/1 var(--sans); transition: color .2s ease, background .2s ease; }
+.calendar-day:hover:not(:disabled) { color: var(--cream); background: var(--wine-bright); }
+.calendar-day.is-today { box-shadow: inset 0 -2px var(--gold); }
+.calendar-day.is-selected { color: var(--cream); background: var(--wine); }
+.calendar-day.is-outside { color: #b4a79b; background: rgba(255,255,255,.08); }
+.calendar-day:disabled { cursor: not-allowed; color: #b4a79b; }
+.calendar-day.is-outside:disabled { opacity: .48; }
+.time-picker { min-width: 0; }
+.time-picker-heading { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; color: #716259; font: 500 .58rem/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.time-picker-heading span:last-child { color: var(--wine); text-align: right; }
+.time-slots { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-light); border-left: 1px solid var(--line-light); }
+.time-slot { min-height: 58px; display: grid; align-content: center; gap: .15rem; padding: .5rem .35rem; border: 0; border-right: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); color: var(--ink); background: rgba(255,255,255,.2); cursor: pointer; font: 500 .72rem/1.2 var(--sans); transition: color .2s ease, background .2s ease; }
+.time-slot small { color: #95867a; font: 400 .48rem/1.2 var(--mono); }
+.time-slot:hover:not(:disabled) { color: var(--cream); background: var(--wine-bright); }
+.time-slot:hover:not(:disabled) small { color: rgba(242,233,222,.65); }
+.time-slot.is-selected { color: var(--cream); background: var(--wine); }
+.time-slot.is-selected small { color: var(--gold); }
+.time-slot:disabled { cursor: not-allowed; color: #aa9d92; background: rgba(255,255,255,.08); }
+.time-slot:disabled small { color: #b4a79b; }
+.slot-empty { grid-column: 1 / -1; margin: 0; padding: 1.2rem; border-right: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); color: #716259; font: 400 .68rem/1.6 var(--mono); }
+.booking-status { min-height: 1.3em; margin: .8rem 0 0; color: var(--wine); font: 400 .58rem/1.5 var(--mono); }
+.booking-status:empty { display: none; }
+.session-form .form-grid { margin-top: 0; }
+.session-form .form-grid input { margin: 0; }
+.session-form .field-label { margin: 2.25rem 0 .65rem; }
+.session-form textarea { margin-top: 0; }
+.session-form .form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.session-form .registration-submit { padding-top: .5rem; }
+.session-form .registration-submit .button { color: var(--cream); background: var(--wine); }
+.session-form .registration-submit .button:hover:not(:disabled) { color: var(--ink); background: var(--gold); }
+.session-form .registration-submit > p { color: #716259; }
+.session-form .registration-status { margin-top: 1.25rem; color: var(--wine); }
+.session-form .registration-status.is-warning { color: #8b5a22; }
+.session-form .registration-status.is-success { color: #3c6948; }
+
+@media (max-width: 1050px) {
+  .session-hero-grid { gap: 4rem; }
+  .session-pass { min-height: 430px; }
+  .calendar-layout { grid-template-columns: 1fr; }
+  .time-picker { max-width: 620px; }
+}
+
+@media (max-width: 980px) {
+  .session-hero-grid, .session-intro-grid, .booking-grid { grid-template-columns: 1fr; }
+  .session-hero-copy { max-width: 800px; }
+  .session-pass { width: min(520px, 92%); margin-inline: auto; }
+  .session-intro-copy { max-width: 720px; }
+  .session-summary { position: static; max-width: 620px; }
+}
+
+@media (max-width: 680px) {
+  :root { --shell: calc(100% - 40px); }
+  .session-masthead nav { gap: 1.2rem; }
+  .session-masthead nav a:first-child, .session-masthead nav a:last-child { display: none; }
+  .session-masthead nav a { font-size: .58rem; }
+  .session-hero { padding: 132px 0 6.5rem; }
+  .session-hero::before { background-size: 18vw 18vw; }
+  .session-hero h1 { margin-top: 1.5rem; font-size: clamp(4rem, 19vw, 5.8rem); }
+  .session-hero-deck { font-size: .96rem; }
+  .session-hero-actions { align-items: stretch; flex-direction: column; gap: .8rem; }
+  .session-hero-actions .button, .session-hero-actions .text-link { width: 100%; justify-content: space-between; }
+  .session-hero-facts { grid-template-columns: 1fr; margin-top: 3rem; }
+  .session-hero-facts div { padding: .85rem 0; }
+  .session-hero-facts div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--line-dark); }
+  .session-pass { min-height: 0; padding: 2rem 1.7rem; box-shadow: 12px 14px 0 var(--wine); }
+  .session-pass-mark { margin: 3.5rem auto 2rem; }
+  .session-intro, .session-booking { padding-block: 6.5rem; }
+  .session-intro-copy h2, .session-booking h2 { font-size: clamp(3rem, 14vw, 4.6rem); }
+  .session-benefits { grid-template-columns: 1fr; }
+  .session-benefit, .session-benefit + .session-benefit { min-height: 0; padding: 2rem 0 2.4rem; border-top: 1px solid var(--line-light); border-left: 0; }
+  .session-benefit:first-child { border-top: 0; }
+  .session-benefit h3 { margin-top: 2.7rem; }
+  .booking-card { padding: 1.4rem; }
+  .session-form > fieldset { padding-bottom: 2.7rem; }
+  .session-form > fieldset + fieldset { padding-top: 2.7rem; }
+  .calendar-day { min-height: 45px; font-size: .72rem; }
+  .time-slots { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { align-items: flex-start; flex-direction: column; gap: .5rem; padding-block: 2rem; }
+  .footer p { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .session-body * { transition: none !important; }
+}

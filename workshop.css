@@ -149,6 +149,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .ticket-panel .button { width: 100%; }
 .ticket-alt { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 44px; color: rgba(242,233,222,.7); border-bottom: 1px solid rgba(201,166,111,.35); text-decoration: none; font: 400 .61rem/1.4 var(--mono); }
 .ticket-alt:hover { color: var(--gold); border-color: var(--gold); }
+.session-offer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 72px; padding: 1rem 1.1rem; border: 1px solid rgba(201,166,111,.36); color: var(--cream); background: rgba(242,233,222,.04); text-decoration: none; transition: color .2s ease, background .2s ease, border-color .2s ease; }
+.session-offer > span:first-child { display: grid; gap: .35rem; }
+.session-offer small { color: rgba(242,233,222,.5); font: 400 .55rem/1.4 var(--mono); letter-spacing: .07em; text-transform: uppercase; }
+.session-offer strong { font: 500 1.05rem/1.3 var(--serif); }
+.session-offer > span:last-child { color: var(--gold); font: 400 1.25rem/1 var(--sans); }
+.session-offer:hover { color: var(--ink); border-color: var(--gold); background: var(--gold); }
+.session-offer:hover small, .session-offer:hover > span:last-child { color: var(--wine); }
 .ticket-note { margin: 1rem 0 0; color: var(--gold); font: 400 .57rem/1.5 var(--mono); text-align: center; }
 .interest-form { position: relative; display: grid; padding: clamp(2rem, 4vw, 3.5rem); border: 1px solid rgba(201,166,111,.36); background: rgba(242,233,222,.035); }
 .interest-form label { margin: 0 0 .65rem; color: rgba(242,233,222,.58); font: 400 .58rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
