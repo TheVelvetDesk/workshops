@@ -36,17 +36,6 @@
 .session-pass dd { margin: 0; color: var(--wine); font: 500 .7rem/1.4 var(--mono); text-align: right; }
 .session-pass-footer { margin-top: 1.8rem; padding-top: 1rem; border-top: 1px solid rgba(101,20,44,.25); }
 
-.session-intro { padding: clamp(7rem, 11vw, 12rem) 0; background: var(--paper); }
-.session-intro-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(4rem, 9vw, 10rem); align-items: start; }
-.session-intro-copy h2 { margin: 2.7rem 0 2rem; font: 500 clamp(3.4rem, 5.8vw, 6.4rem)/.92 var(--serif); letter-spacing: -.06em; }
-.session-intro-copy h2 em { color: var(--wine); font-weight: 500; }
-.session-benefits { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); }
-.session-benefit { min-height: 260px; padding: 1.8rem 1.8rem 2rem 0; }
-.session-benefit + .session-benefit { padding-left: 1.8rem; border-left: 1px solid var(--line-light); }
-.session-benefit > span { color: var(--wine); font: 500 .6rem/1 var(--mono); }
-.session-benefit h3 { margin: 5rem 0 1rem; font: 500 clamp(1.5rem, 2.1vw, 2.15rem)/1.1 var(--serif); letter-spacing: -.03em; }
-.session-benefit p { margin: 0; color: #5d5047; font-size: .88rem; line-height: 1.75; }
-
 .session-booking { padding: clamp(7rem, 11vw, 12rem) 0; color: var(--ink); background: #ded3c5; }
 .booking-grid { display: grid; grid-template-columns: minmax(260px, .68fr) minmax(0, 1.32fr); gap: clamp(4rem, 8vw, 9rem); align-items: start; }
 .session-summary { position: sticky; top: 3rem; }
@@ -117,10 +106,9 @@
 }
 
 @media (max-width: 980px) {
-  .session-hero-grid, .session-intro-grid, .booking-grid { grid-template-columns: 1fr; }
+  .session-hero-grid, .booking-grid { grid-template-columns: 1fr; }
   .session-hero-copy { max-width: 800px; }
   .session-pass { width: min(520px, 92%); margin-inline: auto; }
-  .session-intro-copy { max-width: 720px; }
   .session-summary { position: static; max-width: 620px; }
 }
 
@@ -140,12 +128,8 @@
   .session-hero-facts div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--line-dark); }
   .session-pass { min-height: 0; padding: 2rem 1.7rem; box-shadow: 12px 14px 0 var(--wine); }
   .session-pass-mark { margin: 3.5rem auto 2rem; }
-  .session-intro, .session-booking { padding-block: 6.5rem; }
-  .session-intro-copy h2, .session-booking h2 { font-size: clamp(3rem, 14vw, 4.6rem); }
-  .session-benefits { grid-template-columns: 1fr; }
-  .session-benefit, .session-benefit + .session-benefit { min-height: 0; padding: 2rem 0 2.4rem; border-top: 1px solid var(--line-light); border-left: 0; }
-  .session-benefit:first-child { border-top: 0; }
-  .session-benefit h3 { margin-top: 2.7rem; }
+  .session-booking { padding-block: 6.5rem; }
+  .session-booking h2 { font-size: clamp(3rem, 14vw, 4.6rem); }
   .booking-card { padding: 1.4rem; }
   .session-form > fieldset { padding-bottom: 2.7rem; }
   .session-form > fieldset + fieldset { padding-top: 2.7rem; }
